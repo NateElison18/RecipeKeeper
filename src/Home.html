@@ -10,28 +10,29 @@
 
 <header>
     <h1>Recipe Keeper</h1>
+    <nav>
+
+        <div>
+            <label for="recipes">Jump to Recipe:</label>
+            <select name="recipes" id="recipes">
+                <option value="0"><a href="#section1"></a></option>
+                <option value="1"><a href="#section1">Peanut Butter & Jelly</a></option>
+                <option value="2"><a href="#section2">Chicken Nuggets</a></option>
+                <option value="3"><a href="#section3">Toast</a></option>
+
+            </select>
+        </div>
+
+        <!--    <ul>-->
+        <!--&lt;!&ndash;        TODO: Recipes&ndash;&gt;-->
+        <!--        <li><a href="#section1">Peanut Butter & Jelly</a></li>-->
+        <!--        <li><a href="#section2">Chicken Nuggets</a></li>-->
+        <!--        <li><a href="#section3">Toast</a></li>-->
+        <!--    </ul>-->
+    </nav>
 </header>
 
-<nav>
 
-    <div>
-        <label for="recipes">Jump to Recipe:</label>
-        <select name="recipes" id="recipes">
-            <option value="0"><a href="#section1"></a></option>
-            <option value="1"><a href="#section1">Peanut Butter & Jelly</a></option>
-            <option value="2"><a href="#section2">Chicken Nuggets</a></option>
-            <option value="3"><a href="#section3">Toast</a></option>
-
-        </select>
-    </div>
-
-<!--    <ul>-->
-<!--&lt;!&ndash;        TODO: Recipes&ndash;&gt;-->
-<!--        <li><a href="#section1">Peanut Butter & Jelly</a></li>-->
-<!--        <li><a href="#section2">Chicken Nuggets</a></li>-->
-<!--        <li><a href="#section3">Toast</a></li>-->
-<!--    </ul>-->
-</nav>
 
 <main>
     <hr/>
@@ -53,13 +54,16 @@
         <h3>Overview</h3>
         <ul>
             <!--            TODO -->
-            <li></li>
+            <p>Time: 5 minutes</p>
+            <p>Calories: <label id="pbjCals">450</label></p>
         </ul>
 
         <h3>Ingredients</h3>
         <ul>
             <!--            TODO -->
-            <li></li>
+            <li>Bread (<label id="pbjBreadPortion">2</label> slices)</li>
+            <li>Peanut butter (<label id="pbjPbPortion">2</label> tablespoons)</li>
+            <li>Jelly (<label id="pbjJellyPortion">2</label> tablespoons)</li>
         </ul>
 
         <h4>Instructions</h4>
@@ -89,19 +93,25 @@
         <h3>Overview</h3>
         <ul>
             <!--            TODO -->
-            <li></li>
+            <p>Time: 15 minutes</p>
+            <p>Calories: <label id="chickenNuggetCals">400</label></p>
         </ul>
 
         <h3>Ingredients</h3>
         <ul>
             <!--            TODO -->
-            <li></li>
+            <li>Frozen chicken nuggets (<label id="chickenNuggetChickenPortion">8</label>)</li>
+            <li>Any sauce that butters your biscuits</li>
         </ul>
 
         <h3>Instructions</h3>
         <ul>
             <!--            TODO -->
-            <li></li>
+            <li>Preheat your oven or air frier to whatever your bag of frozen nuggets says.</li>
+            <li>Toss those babies in your preferred cooking device.</li>
+            <li>Starve for the next 10 - 20 minutes (again, however long the bag says).</li>
+            <li>Burn your tongue after refusing to wait for the nuggs to cool down.</li>
+            <li>Dip in your preferred sauce and enjoy!</li>
         </ul>
     </section>
 
@@ -124,15 +134,19 @@
         <h3>Overview</h3>
         <ul>
 <!--            TODO -->
-            <li></li>
+            <p>Time: 3 minutes</p>
+<!--            TODO: CHECK THIS-->
+            <p>Calories: <label id="toastCals">250</label></p>
         </ul>
 
 
         <h3>Ingredients</h3>
         <ul>
             <!--            TODO -->
-            <li><p></p>Bread</li>
-            <li>Butter</li>
+            <li>Bread (<label id="toastBreadPortion">2</label> slices)</li>
+            <li>Butter <label>(As much as you want you filthy animal)</label></li>
+            <li>Jam (<label id="toastJamPortion">2</label> tablespoons)</li>
+
         </ul>
 
         <h3>Instructions</h3>
