@@ -35,21 +35,27 @@
 
 
 <main>
-    <hr/>
     <section id="section1">
         <h2>Peanut Butter & Jelly</h2>
         <img src="Images/PBJ.jpg" alt="Peanut Butter and Jelly">
 
-        <div>
-            <label for="pbjPortion">Portions:</label>
-            <select name="pbjPortion" id="pbjPortion">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="0.5">0.5</option>
+            <div class="order-option">
+                Portions:
+                <span id="quantity-field">
+                    <button id="up" onclick="setQuantity('up');">+</button>
+                    <input type="text" id="pbjPortion" value="1">
+                    <button id="down" onclick="setQuantity('down');">-</button>
+                </span>
+            </div>
+<!--            </div>-->
+<!--            <select name="pbjPortion" id="pbjPortion">-->
+<!--                <option value="1">1</option>-->
+<!--                <option value="2">2</option>-->
+<!--                <option value="4">4</option>-->
+<!--                <option value="0.5">0.5</option>-->
 
-            </select>
-        </div>
+<!--            </select>-->
+<!--        </div>-->
 
         <h3>Overview</h3>
         <ul>
@@ -92,21 +98,21 @@
 
         <h3>Overview</h3>
         <ul>
-            <!--            TODO -->
+            <!--TODO -->
             <p>Time: 15 minutes</p>
             <p>Calories: <label id="chickenNuggetCals">400</label></p>
         </ul>
 
         <h3>Ingredients</h3>
         <ul>
-            <!--            TODO -->
+            <!--TODO -->
             <li>Frozen chicken nuggets (<label id="chickenNuggetChickenPortion">8</label>)</li>
             <li>Any sauce that butters your biscuits</li>
         </ul>
 
         <h3>Instructions</h3>
         <ul>
-            <!--            TODO -->
+            <!--TODO -->
             <li>Preheat your oven or air frier to whatever your bag of frozen nuggets says.</li>
             <li>Toss those babies in your preferred cooking device.</li>
             <li>Starve for the next 10 - 20 minutes (again, however long the bag says).</li>
@@ -115,11 +121,12 @@
         </ul>
     </section>
 
-    <hr/>
 
     <section id="section3">
         <h2>Toast</h2>
-        <img src="Images/toast.jpg" alt="Toast">
+        <div class="photoDiv">
+            <img src="Images/toast.jpg" alt="Toast">
+        </div>
 
         <div>
             <label for="toastPortion">Portions:</label>

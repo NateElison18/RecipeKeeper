@@ -3,7 +3,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #A67F78;
+  background-color: #3e3c3c;
   color: #E1DCD9;
 }
 
@@ -45,7 +45,19 @@ nav a {
 }
 
 section {
-    padding: 0px 0px 0px 5%;
+    /* padding: 0px 5% 0% 5%; */
+    width: 50%;
+    margin: auto;
+    width: 50%;
+    border: 2px solid gray;
+    padding: 10px;
+    background-color: #A67F78;
+
+
+
+}
+img {
+    width: 100%
 
 }
 
