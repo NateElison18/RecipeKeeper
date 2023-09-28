@@ -32,8 +32,6 @@
     </nav>
 </header>
 
-
-
 <main>
     <section id="section1">
         <h2>Peanut Butter & Jelly</h2>
@@ -42,9 +40,9 @@
             <div class="order-option">
                 Portions:
                 <span id="quantity-field">
-                    <button id="up" onclick="setQuantity('up');">+</button>
-                    <input type="text" id="pbjPortion" value="1">
-                    <button id="down" onclick="setQuantity('down');">-</button>
+                    <button id="pbjUp" onclick="setQuantity('pbj', 'up');">+</button>
+                    <input type="number" id="pbjPortion" value="1" readonly>
+                    <button id="pbjDown" onclick="setQuantity('pbj', 'down');">-</button>
                 </span>
             </div>
 <!--            </div>-->
@@ -60,7 +58,7 @@
         <h3>Overview</h3>
         <ul>
             <!--            TODO -->
-            <p>Time: 5 minutes</p>
+            <p>Time: <label id="pbjTime">2</label> minutes</p>
             <p>Calories: <label id="pbjCals">450</label></p>
         </ul>
 
@@ -86,27 +84,26 @@
         <h2>Chicken Nuggets</h2>
         <img src="Images/ChickenNuggets.jpg" alt="Chicken Nuggets">
 
-        <div>
-            <label for="nuggetPortion">Portions:</label>
-            <select name="nuggetPortion" id="nuggetPortion">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="0.5">0.5</option>
-            </select>
+        <div class="order-option">
+            Portions:
+            <span>
+                    <button id="nuggsUp" onclick="setQuantity('nuggs', 'up');">+</button>
+                    <input type="number" id="nuggsPortion" value="1" readonly>
+                    <button id="nuggsDown" onclick="setQuantity('nuggs', 'down');">-</button>
+            </span>
         </div>
 
         <h3>Overview</h3>
         <ul>
             <!--TODO -->
-            <p>Time: 15 minutes</p>
+            <p>Time: <label id="nuggsTime">15</label> minutes</p>
             <p>Calories: <label id="chickenNuggetCals">400</label></p>
         </ul>
 
         <h3>Ingredients</h3>
         <ul>
             <!--TODO -->
-            <li>Frozen chicken nuggets (<label id="chickenNuggetChickenPortion">8</label>)</li>
+            <li>Frozen chicken nuggets (<label id="chickenNuggsPortion">8</label>)</li>
             <li>Any sauce that butters your biscuits</li>
         </ul>
 
@@ -121,27 +118,25 @@
         </ul>
     </section>
 
+    <hr/>
 
     <section id="section3">
         <h2>Toast</h2>
-        <div class="photoDiv">
-            <img src="Images/toast.jpg" alt="Toast">
-        </div>
+        <img src="Images/toast.jpg" alt="Toast">
 
-        <div>
-            <label for="toastPortion">Portions:</label>
-            <select name="toastPortion" id="toastPortion">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="4">4</option>
-                <option value="0.5">0.5</option>
-            </select>
+        <div class="order-option">
+            Portions:
+            <span>
+                <button id="toastUp" onclick="setQuantity('toast', 'up');">+</button>
+                <input type="number" id="toastPortion" value="1" readonly>
+                <button id="toastDown" onclick="setQuantity('toast', 'down');">-</button>
+            </span>
         </div>
 
         <h3>Overview</h3>
         <ul>
 <!--            TODO -->
-            <p>Time: 3 minutes</p>
+            <p>Time: <label id="toastTime">3</label> minutes</p>
 <!--            TODO: CHECK THIS-->
             <p>Calories: <label id="toastCals">250</label></p>
         </ul>
@@ -162,7 +157,6 @@
             <li>Slap that bread in the toaster</li>
             <li>Pick you browning level and turn that motherfucker on</li>
             <li>Slather with butter, jam, avocado, or whatever else your entitled ass wants</li>
-
 
         </ul>
     </section>

@@ -17,7 +17,7 @@ body {
 
 header {
   text-align: center;
-  background-color: #3e3c3c;
+  background-color: #333;
   color: #fff;
   padding: 10px 0;
 }
@@ -27,7 +27,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  background-color: #3e3c3c;
+  background-color: #333;
   padding: 10px 0;
 }
 
@@ -46,19 +46,27 @@ nav a {
 
 section {
     /* padding: 0px 5% 0% 5%; */
-    width: 50%;
+    width: 70%;
     margin: auto;
-    width: 50%;
-    border: 2px solid gray;
     padding: 10px;
     background-color: #A67F78;
 
-
-
 }
 img {
-    width: 100%
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      padding: 0px 0px 15px 0px;
+}
 
+input {
+    width: 35px;
+
+}
+
+hr {
+    opacity: 0.0;
 }
 
 /* Footer Styles */
